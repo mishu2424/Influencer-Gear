@@ -97,13 +97,76 @@ header{
 /* main section styles */
 main section{
     width: 70vw;
-    margin: 0 auto;
+    margin: 10% auto;
 }
 
-/* products section styles */
-.products > h3{
+/* collection section styles */
+.popular-collection > h3{
     text-align: center;
 }
+.collection-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,30em);
+    gap:15px;
+    padding: 2%;
+    /* border: 1px solid skyblue; */
+}
+.card{
+    /* border: 1px solid skyblue; */
+    border-radius: 5px;
+    padding: 3%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    box-shadow:  0px 0px 5px lightgray;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+}
+.card-details{
+    padding-top: 3%;
+}
+.card-title{
+    margin: 0px;
+}
+.card-price{
+    font-size: 1.2em;
+    font-weight: 300;
+    margin: 0px;
+    padding-top: 2%;
+}
+.rating{
+    color: #FB8200;
+    display: inline-block;
+    padding-top: 1%;
+    margin: 2% 0px;
+}
+.rate{
+    display: inline;
+    font-size: 1em;
+    color: #787885;
+}
+.card small{
+    color: #787885;
+    padding-top: 2%;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Responsive section */
 /* header section styles */
@@ -183,6 +246,66 @@ main section{
         width:20%;
         height: 10%;
         display: inline;
+    }
+
+    /* main section styles */
+    main section{
+        width: 90vw;
+        margin: 25% auto 5% auto;
+    }
+    
+    /* collection section styles */
+    .popular-collection > h3{
+        text-align: center;
+    }
+    .collection-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(9,35em);
+        gap:15px;
+        padding: 2%;
+        /* border: 1px solid skyblue; */
+    }
+    .card{
+        /* border: 1px solid skyblue; */
+        border-radius: 5px;
+        padding: 3%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        box-shadow:  0px 0px 5px lightgray;
+    }
+    .card img{
+        width: 100%;
+        height: 100%;
+    }
+    .card-details{
+        padding-top: 3%;
+    }
+    .card-title{
+        margin: 0px;
+    }
+    .card-price{
+        font-size: 1.2em;
+        font-weight: 300;
+        margin: 0px;
+        padding-top: 2%;
+    }
+    .rating{
+        color: #FB8200;
+        display: inline-block;
+        padding-top: 1%;
+        margin: 2% 0px;
+    }
+    .rate{
+        display: inline;
+        font-size: 1em;
+        color: #787885;
+    }
+    .card small{
+        color: #787885;
+        padding-top: 2%;
+        display: block;
     }
 }
 /* For medium devices */
