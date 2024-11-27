@@ -74,3 +74,21 @@ header{
 .arrow{
     padding-left: 0.5em;
 }
+
+/* Logo section styles */
+.logo-container{
+    width: 80%;
+    margin: 0 auto;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 0px;
+    margin-bottom: 2%;
+}
+.logo-container img{
+    width: 7%;
+    height: 7%;
+    display: block;
+}
