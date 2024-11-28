@@ -69,7 +69,7 @@ header{
 }
 .banner-img > img {
     width: 80%;
-    height: 70%;
+    height: 80%;
     padding-left: 5%;
 }
 .arrow{
@@ -153,11 +153,37 @@ main section{
     padding-top: 2%;
     display: block;
 }
-
-
-
-
-
+.see-more{
+    text-align: end;
+    color: #E02C6D;
+    /* padding-right: 2%; */
+}
+/* featured section styles */
+.featured-products{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap:10px; */
+}
+.product-img{
+    width: 50%;
+}
+.product-img img{
+    width: 80%;
+    height: 80%;
+    padding-left: 2%;
+}
+.product-details{
+    width: 50%;
+}
+.product-details p{
+    font-size: 1em;
+    color: #787885;
+}
+.btn-primary2{
+    border-radius: 0px;
+    padding: 10px 20px;
+}
 
 
 
@@ -255,9 +281,6 @@ main section{
     }
     
     /* collection section styles */
-    .popular-collection > h3{
-        text-align: center;
-    }
     .collection-container{
         display: grid;
         grid-template-columns: repeat(1,1fr);
@@ -266,47 +289,28 @@ main section{
         padding: 2%;
         /* border: 1px solid skyblue; */
     }
-    .card{
-        /* border: 1px solid skyblue; */
-        border-radius: 5px;
-        padding: 3%;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        box-shadow:  0px 0px 5px lightgray;
+    /* featured section styles */
+    .featured-products{
+        flex-direction: column;
+        text-align: center;
+        gap:10px;
     }
-    .card img{
+    .product-img{
         width: 100%;
-        height: 100%;
     }
-    .card-details{
-        padding-top: 3%;
+    .product-img img{
+        width: 80%;
+        height: 80%;
+        padding-left: 0%;
     }
-    .card-title{
-        margin: 0px;
+    .product-details{
+        width: 100%;
     }
-    .card-price{
-        font-size: 1.2em;
-        font-weight: 300;
-        margin: 0px;
-        padding-top: 2%;
+    .btn-primary2{
+        border-radius: 0px;
+        padding: 10px 20px;
     }
-    .rating{
-        color: #FB8200;
-        display: inline-block;
-        padding-top: 1%;
-        margin: 2% 0px;
-    }
-    .rate{
-        display: inline;
-        font-size: 1em;
-        color: #787885;
-    }
-    .card small{
-        color: #787885;
-        padding-top: 2%;
-        display: block;
-    }
+    
 }
 /* For medium devices */
 @media screen and (min-width:576px) and (max-width:992px){
@@ -373,6 +377,42 @@ main section{
     }
     .arrow{
         padding-left: 0.5em;
+    }
+    /* collection section styles */
+    .collection-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(9,auto);
+        gap:15px;
+        padding: 2%;
+        /* border: 1px solid skyblue; */
+    }
+    .card{
+        grid-template-rows: 1fr auto;
+    }
+    .card-details{
+        height: 50%;
+    }
+    /* featured section styles */
+    .featured-products{
+        flex-direction: column;
+        text-align: center;
+        gap:10px;
+    }
+    .product-img{
+        width: 100%;
+    }
+    .product-img img{
+        width: 80%;
+        height: 80%;
+        padding-left: 0%;
+    }
+    .product-details{
+        width: 100%;
+    }
+    .btn-primary2{
+        border-radius: 0px;
+        padding: 10px 20px;
     }
 
 }
@@ -443,5 +483,42 @@ main section{
     .arrow{
         padding-left: 0.5em;
     }
+    /* collection section styles */
+    .collection-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(9,auto);
+        gap:15px;
+        padding: 2%;
+        /* border: 1px solid skyblue; */
+    }
+    .card{
+        grid-template-rows: 1fr auto;
+    }
+    .card-details{
+        height: 50%;
+    }
+    /* featured section styles */
+    .featured-products{
+        flex-direction: column;
+        text-align: center;
+        gap:10px;
+    }
+    .product-img{
+        width: 100%;
+    }
+    .product-img img{
+        width: 80%;
+        height: 80%;
+        padding-left: 0%;
+    }
+    .product-details{
+        width: 100%;
+    }
+    .btn-primary2{
+        border-radius: 0px;
+        padding: 10px 20px;
+    }
+    
 
 }
