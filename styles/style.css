@@ -186,11 +186,26 @@ main section{
 }
 
 
+/* footer section styles */
+footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #D9DBE1;
+    background-color: rgb(2, 2, 23);
+    text-align: center;
+    padding: 3% 0px;
+}
 
+footer h3,p{
+    margin: 0px;
+}
 
-
-
-
+.icon{
+    padding-right: 4%;
+}
 
 
 
@@ -199,9 +214,8 @@ main section{
 @media screen and (max-width:576px) {
     header{
         width: 95vw;
-        /* background-position:  40%; */
-        background-position: top bottom;
-        border: 1px solid skyblue;
+        background-position: 70% 40%;
+        /* background-position: top bottom; */
         margin: 0px auto;
     }
     .header{
@@ -310,6 +324,10 @@ main section{
         border-radius: 0px;
         padding: 10px 20px;
     }
+    /* footer section styles */
+    footer h3{
+        font-size: 1em;
+    }
     
 }
 /* For medium devices */
@@ -318,7 +336,6 @@ main section{
         width: 95vw;
         /* background-position:  40%; */
         background-position: center;
-        border: 1px solid skyblue;
         margin: 0px auto;
     }
     .header{
